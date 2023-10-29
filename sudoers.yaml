@@ -3,8 +3,7 @@
   tasks:    
     - name: Get sudoers file content
       become: yes
-      become_user: root
-      command: cat /etc/sudoers
+      command: sudo cat /etc/sudoers
       register: cmd_var
  
     - name: Print output
